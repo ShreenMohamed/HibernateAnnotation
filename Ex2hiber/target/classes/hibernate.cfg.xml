@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://WWW.hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+      <session-factory>
+   
+      <property name = "hibernate.dialect"> org.hibernate.dialect.MySQLDialect</property>
+      <property name = "hibernate.connection.driver_class">com.mysql.jdbc.Driver </property>
+      <property name = "hibernate.connection.url">jdbc:mysql://localhost:3306/hiber </property>
+      <property name = "hibernate.connection.username"> root</property>
+      <property name = "hibernate.connection.password"> root</property>
+      <!-- show in console -->
+      <property name = "hibernate.show_sql"> true</property>
+      <!-- create in first time only other update  -->
+      <property name = "hibernate.hbm2ddl.auto">create</property>
+      <!-- List of XML mapping files -->
+      <!--  <mapping class = "com.hiber2.Seconed"/> -->
+      <!--   <mapping class = "com.hiber2.Employee"/> -->
+      <mapping class = "com.hiber2.Student"/>
+      <mapping class = "com.hiber2.Student2"/>
+      <mapping class = "com.hiber2.Book"/>
+      <mapping class = "com.hiber2.Center"/>
+      <mapping class = "com.hiber2.Books"/>
+      <mapping class = "com.hiber2.Probooks"/>
+      <mapping class = "com.hiber2.Headser"/>
+      <mapping class = "com.hiber2.Course"/>
+   </session-factory>
+</hibernate-configuration>
